@@ -1,3 +1,112 @@
+.navbar {
+  font-size: 20px;
+}
+
+.grid {
+  display: grid;
+}
+@media (min-width: 768px) {
+  .grid {
+    font-size: 20px;
+    grid-template-columns: 50% 60%;
+    align-items: center;
+    margin-top: 5em;
+  }
+}
+.grid .img-cont {
+  max-width: 500px;
+}
+@media (min-width: 768px) {
+  .grid .img-cont {
+    margin-left: auto;
+    margin-top: 5em;
+  }
+}
+.grid .img-cont img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.grid .content-div {
+  max-width: 500px;
+}
+.grid .content-div h1 {
+  animation: bounce 3s ease-in;
+}
+@media (min-width: 768px) {
+  .grid .content-div {
+    margin-right: 1.5em;
+  }
+}
+.grid .skills-cont {
+  margin-top: 1.5em;
+}
+@media (min-width: 768px) {
+  .grid .skills-cont {
+    position: absolute;
+    top: 30em;
+  }
+}
+.grid .skills-cont h2 {
+  margin-bottom: 0;
+}
+.grid .skills-cont ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.grid .skills-cont ul li:nth-child(odd) {
+  animation: flash-one 3s infinite alternate;
+}
+.grid .skills-cont ul li:nth-child(even) {
+  animation: flash-two 3s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50%);
+    color: #e06e6e;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes flash-one {
+  0% {
+    color: #3737f5;
+  }
+  25% {
+    color: lightcoral;
+  }
+  50% {
+    color: lightgreen;
+  }
+  75% {
+    color: white;
+  }
+  100% {
+    color: palevioletred;
+  }
+}
+@keyframes flash-two {
+  0% {
+    color: white;
+  }
+  25% {
+    color: violet;
+  }
+  50% {
+    color: #e54b7f;
+  }
+  75% {
+    color: #3737f5;
+  }
+  100% {
+    color: lightgreen;
+  }
+}
 body {
   background-color: black;
   color: white;
@@ -29,6 +138,11 @@ header {
 header .hamburger-container {
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  header .hamburger-container {
+    display: none;
+  }
+}
 header .hamburger-container span {
   position: relative;
   background-color: white;
@@ -55,9 +169,15 @@ header .hamburger-container span::after {
 header .navbar {
   display: none;
 }
+@media (min-width: 768px) {
+  header .navbar {
+    display: block;
+  }
+}
 header .navbar a {
   text-decoration: none;
-  padding-top: 1em;
+  padding: 1em 2em;
+  color: white;
 }
 
 .overlay {
@@ -71,7 +191,7 @@ header .navbar a {
   align-items: center;
   background-color: lightgray;
   transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   opacity: 0;
 }
 .overlay .close-button span {
