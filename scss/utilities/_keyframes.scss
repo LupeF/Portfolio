@@ -1,0 +1,48 @@
+//=== keyframes for About Page ===
+@keyframes bounce {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(50%);
+        color: rgb(224, 110, 110)
+     
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes flash-one {
+    0% {
+        color: rgb(55, 55, 245);
+    }
+    25%{
+        color: lightcoral;
+    }
+    50%{
+        color: lightgreen;
+    }
+    75%{
+       color: white;
+    }
+    100%{
+        color: palevioletred;
+    }
+}
+@keyframes flash-two {
+    0% {
+        color: white;
+    }
+    25%{
+        color: violet;
+    }
+    50%{
+        color: rgb(229, 75, 127);
+    }
+    75%{
+        color: rgb(55, 55, 245);
+    }
+    100%{
+        color: lightgreen;
+    }
+}

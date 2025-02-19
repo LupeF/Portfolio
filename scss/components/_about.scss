@@ -1,19 +1,28 @@
+// body{
+//     background-image: url(../images/rsz_pexels-photospublic-444964.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background: url('your-image.jpg') center/cover no-repeat;
+//     backdrop-filter: blur(5px); /* Blurs the background */
+// }
 .navbar{
     font-size: 20px;
+    padding-top: 1rem;
 }
 .grid{
     display: grid;
     @media(min-width:768px){
         font-size: 20px;
-        grid-template-columns: 50% 60%;
-        align-items: center;
-        margin-top: 5em;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 6rem;
+    }
+    @media(min-width:1600px){
+        margin-top: 6rem;
     }
     .img-cont{
         max-width: 500px;
         @media(min-width:768px){
          margin-left: auto;
-         margin-top: 5em;
         }
         img{
             width: 100%;
@@ -21,9 +30,10 @@
             border-radius: 20px;
         }
     }
-    
     .content-div{
         max-width: 500px;
+        margin-top: 3em;
+       
         h1{
             animation:bounce 3s ease-in
         }
@@ -35,7 +45,8 @@
         margin-top: 1.5em;
         @media(min-width:768px){
             position: absolute;
-            top: 30em;
+            top: 23em;
+            margin-top: 0;
         }
         h2{
             margin-bottom: 0;
@@ -54,50 +65,4 @@
 }
 
 
-@keyframes bounce {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(50%);
-        color: rgb(224, 110, 110)
-     
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-@keyframes flash-one {
-    0% {
-        color: rgb(55, 55, 245);
-    }
-    25%{
-        color: lightcoral;
-    }
-    50%{
-        color: lightgreen;
-    }
-    75%{
-       color: white;
-    }
-    100%{
-        color: palevioletred;
-    }
-}
-@keyframes flash-two {
-    0% {
-        color: white;
-    }
-    25%{
-        color: violet;
-    }
-    50%{
-        color: rgb(229, 75, 127);
-    }
-    75%{
-        color: rgb(55, 55, 245);
-    }
-    100%{
-        color: lightgreen;
-    }
-}
+
