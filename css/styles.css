@@ -259,6 +259,16 @@ header .navbar a {
   margin: 0;
 }
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+.logo-container img {
+  height: 100px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
