@@ -50,9 +50,11 @@
 }
 .grid .skills-cont {
   margin-top: 1.5em;
+  text-align: center;
 }
 @media (min-width: 768px) {
   .grid .skills-cont {
+    text-align: initial;
     position: absolute;
     top: 23em;
     margin-top: 0;
@@ -201,7 +203,7 @@ header {
 }
 
 footer {
-  z-index: 5;
+  z-index: 2;
 }
 footer .socials-container {
   text-align: center;
@@ -215,8 +217,8 @@ footer .socials-container img {
 }
 @media (min-width: 768px) {
   footer .socials-container img {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
   }
 }
 
@@ -341,7 +343,7 @@ header .navbar a {
 .show {
   transform: translateX(0);
   opacity: 1;
-  z-index: 3;
+  z-index: 4;
 }
 
 .hidden {

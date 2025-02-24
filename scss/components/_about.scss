@@ -41,7 +41,9 @@
     }
     .skills-cont {
         margin-top: 1.5em;
+        text-align: center;
         @media(min-width:768px){
+            text-align: initial;
             position: absolute;
             top: 23em;
             margin-top: 0;
