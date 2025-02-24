@@ -210,10 +210,12 @@ footer .socials-container {
   font-size: 20px;
 }
 footer .socials-container img {
+  display: inline-block;
+  animation: spinAndPop 5s ease-in-out infinite;
   cursor: pointer;
   height: 75px;
   width: 75px;
-  padding: 0.5em;
+  padding: 1em;
 }
 @media (min-width: 768px) {
   footer .socials-container img {
@@ -804,6 +806,20 @@ template {
   }
   100% {
     color: lightgreen;
+  }
+}
+@keyframes spinAndPop {
+  0% {
+    transform: rotate(0deg) scale(1) perspective(500px) translateZ(0);
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg) scale(1.2) perspective(500px) translateZ(50px);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(1) perspective(500px) translateZ(0);
+    opacity: 1;
   }
 }
 
