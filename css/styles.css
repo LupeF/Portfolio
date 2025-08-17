@@ -5,7 +5,7 @@
 }
 @media (min-width: 768px) {
   #about-body {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 55%, #000 50%, #000 100%), url("../images/aerial-photography-of-city-during-evening-161772.jpg") no-repeat center top;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 55%, #000 50%, #000 100%), url("../images/aerial-photography-of-city-during-evening-161772.jpg") no-repeat center top;
   }
 }
 
@@ -369,7 +369,6 @@ header .navbar a {
 
 @media (min-width: 768px) {
   #projects-body {
-    width: 90%;
     min-height: 80vh;
   }
 }
