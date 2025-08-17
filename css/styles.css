@@ -445,7 +445,6 @@ header .navbar a {
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
-  /* Make sure the parent is position: relative; */
 }
 .slider-controls button {
   background: rgba(0, 0, 0, 0.5);

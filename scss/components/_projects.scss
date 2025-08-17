@@ -81,9 +81,6 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    transform: translateY(-50%);
-    /* Make sure the parent is position: relative; */
-
     & button {
         background: rgba(0, 0, 0, 0.5);
         border: none;
@@ -97,6 +94,7 @@
     & button:hover {
         background: rgba(0, 0, 0, 0.8);
     }
+    transform: translateY(-50%);
 }
 
 .logo-container{
