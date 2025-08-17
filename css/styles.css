@@ -1,3 +1,10 @@
+#about-body {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 55%, #000 50%, #000 100%), url("../images/aerial-photography-of-city-during-evening-161772.jpg") no-repeat center top;
+  color: white;
+  position: relative;
+  padding: 1em;
+}
+
 .navbar {
   font-size: 20px;
   padding-top: 1rem;
@@ -51,12 +58,14 @@
 .grid .skills-cont {
   margin-top: 1.5em;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 768px) {
   .grid .skills-cont {
     text-align: initial;
     position: absolute;
-    top: 23em;
+    top: 19em;
     margin-top: 0;
   }
 }
@@ -69,6 +78,7 @@
 }
 .grid .skills-cont ul li:nth-child(odd) {
   animation: flash-one 3s infinite alternate;
+  margin-right: 0.5em;
 }
 .grid .skills-cont ul li:nth-child(even) {
   animation: flash-two 3s infinite alternate;
@@ -225,7 +235,6 @@ footer .socials-container img {
 }
 
 body {
-  background-color: black;
   color: white;
   position: relative;
   padding: 1em;
@@ -235,6 +244,7 @@ body {
   font-family: "Gruppo", serif;
   font-weight: 400;
   font-style: normal;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/aerial-photography-of-city-during-evening-161772.jpg") no-repeat center fixed;
 }
 body main {
   place-self: center;
@@ -367,37 +377,17 @@ header .navbar a {
   font-style: normal;
 }
 
-.slider-container {
-  position: relative;
-  overflow: hidden;
-  max-width: 1100px;
-  margin: 0 auto;
-}
 .slider-container .project-main {
   max-width: 800px;
 }
-@media (min-width: 1024px) {
-  .slider-container .project-main {
-    max-width: initial;
-  }
-}
-@media (min-width: 768px) {
-  .slider-container .project-main a {
-    flex: 0 0 calc(50% - 1em);
-    overflow: hidden;
-    transition: transfform 0.3s easse;
-  }
-}
-@media (min-width: 1024px) {
-  .slider-container .project-main a {
-    flex: 0 0 calc(33.333% - .5em);
-  }
+.slider-container .project-main a {
+  height: 90%;
 }
 @media (min-width: 768px) {
   .slider-container .project-main {
-    display: flex;
+    display: grid;
     gap: 1em;
-    transition: transform 0.5s ease-in-out;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .slider-container .project-main .content-cont {
@@ -429,16 +419,12 @@ header .navbar a {
   left: 0;
   bottom: 0;
   align-content: center;
-  background-color: gray;
-  transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+  background-color: #212020;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 .slider-container .project-main .content-cont .content:hover {
   transform: translateX(100%);
   opacity: 0;
-}
-.slider-container .project-main .content-cont #animation-card:hover,
-.slider-container .project-main .content-cont #accordian-card:hover {
-  transform: translateX(-100%);
 }
 .slider-container .project-main .content-cont h2 {
   margin-bottom: 0;
@@ -450,12 +436,13 @@ header .navbar a {
 }
 
 .slider-controls {
-  position: absolute;
+  position: relative;
   top: 50%;
   width: 100%;
   display: flex;
   justify-content: space-between;
   transform: translateY(-50%);
+  /* Make sure the parent is position: relative; */
 }
 .slider-controls button {
   background: rgba(0, 0, 0, 0.5);
@@ -467,7 +454,7 @@ header .navbar a {
   border-radius: 50%;
   transition: background 0.3s ease;
 }
-.slider-controls :hover {
+.slider-controls button:hover {
   background: rgba(0, 0, 0, 0.8);
 }
 

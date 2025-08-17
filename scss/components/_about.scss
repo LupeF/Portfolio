@@ -1,4 +1,19 @@
-
+#about-body {
+     
+    
+            background:linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.5) 0%,
+            rgba(0, 0, 0, 0.5) 55%,
+            #000 50%,
+            #000 100%
+        ),
+        url("../images/aerial-photography-of-city-during-evening-161772.jpg") no-repeat center top;
+    // background-size: cover;
+    color: white;
+    position: relative;
+    padding: 1em;
+}
 .navbar{
     font-size: 20px;
     padding-top: 1rem;
@@ -42,10 +57,13 @@
     .skills-cont {
         margin-top: 1.5em;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+      
         @media(min-width:768px){
             text-align: initial;
             position: absolute;
-            top: 23em;
+            top: 19em;
             margin-top: 0;
         }
         h2{
@@ -54,8 +72,11 @@
         ul{
             list-style-type: none;
             padding-left: 0;
+            // display: flex;
+          
             li:nth-child(odd){
                 animation: flash-one 3s infinite alternate;
+                margin-right: .5em;
             }
             li:nth-child(even){
                 animation: flash-two 3s infinite alternate;
