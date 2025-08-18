@@ -99,11 +99,11 @@
             }
           
             li:nth-child(odd){
-                animation: flash-one 3s infinite alternate;
+                animation: flash-one 2s infinite alternate;
                 
             }
             li:nth-child(even){
-                animation: flash-two 3s infinite alternate;
+                animation: flash-two 2s infinite alternate;
             }
         }
     }

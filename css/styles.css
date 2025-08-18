@@ -111,10 +111,10 @@
   font-weight: bold;
 }
 .grid .skills-cont ul li:nth-child(odd) {
-  animation: flash-one 3s infinite alternate;
+  animation: flash-one 2s infinite alternate;
 }
 .grid .skills-cont ul li:nth-child(even) {
-  animation: flash-two 3s infinite alternate;
+  animation: flash-two 2s infinite alternate;
 }
 
 html {
@@ -856,24 +856,30 @@ template {
 }
 @keyframes flash-one {
   0% {
-    background: radial-gradient(circle, #b7c9e2 0%, #7fa1c4 100%);
+    background: radial-gradient(ellipse at top left, #ffd6d6 0%, #a0c4ff 100%);
   }
   50% {
-    background: radial-gradient(circle at 40% 60%, #f7cac9 0%, #92a8d1 100%);
+    background: radial-gradient(circle at 70% 30%, #bdb2ff 0%, #ffc6ff 100%);
+  }
+  75% {
+    background: radial-gradient(circle at 80% 60%, #b5ead7 0%, #ffdac1 100%);
   }
   100% {
-    background: radial-gradient(circle at 60% 40%, #c7b8e6 0%, #8f8fc1 100%);
+    background: radial-gradient(circle at 20% 80%, #f1c0e8 0%, #a3c4f3 100%);
   }
 }
 @keyframes flash-two {
   0% {
-    background: radial-gradient(circle at 60% 40%, #52b788 0%, #b7e4c7 100%);
+    background: radial-gradient(circle at 80% 60%, #b5ead7 0%, #ffdac1 100%);
   }
   50% {
-    background: radial-gradient(circle, #b8e1dd 0%, #89b0ae 100%);
+    background: radial-gradient(ellipse at center, #c7ceea 0%, #f3b0c3 100%);
+  }
+  75% {
+    background: radial-gradient(ellipse at top left, #ffd6d6 0%, #a0c4ff 100%);
   }
   100% {
-    background: radial-gradient(circle, #e3c7e9 0%, #b296c7 100%);
+    background: radial-gradient(ellipse at bottom right, #caffbf 0%, #9bf6ff 100%);
   }
 }
 @keyframes spinAndPop {
