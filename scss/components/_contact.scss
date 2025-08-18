@@ -22,10 +22,7 @@ header{
         height: 100%;
         min-height: 100%;
     }
-    > * {
-        position: relative; /* Ensure content is above the overlay */
-        z-index: 1; /* Bring content above the overlay */
-    }
+   
     main{
         max-width: 600px;
         z-index: 2;
